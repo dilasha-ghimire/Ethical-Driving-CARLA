@@ -41,7 +41,7 @@ scenario_input = {
     "name": scenario_name,
     "left_risk": 9,
     "right_risk": 5,
-    "left_is_child": True  # you can use this in your ethics logic too
+    "left_is_child": True  
 }
 
 # === Spawn scenario actors ===
@@ -104,7 +104,7 @@ camera_transform = carla.Transform(camera_location, camera_rotation)
 camera = world.spawn_actor(camera_bp, camera_transform)
 spectator.set_transform(camera_transform)
 
-camera.listen(save_image)  # Start listening early
+camera.listen(save_image)  
 
 # === Vehicle Control ===
 control = carla.VehicleControl()
